@@ -1,0 +1,143 @@
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 627px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.back {
+  margin-bottom: 16px;
+  font: var(--link);
+  color: var(--color-brand);
+}
+
+h1 {
+  color: var(--content-primary);
+  font: var(--title);
+  margin-bottom: 44px;
+}
+
+.field-add {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.input-text {
+  border: 2px solid var(--border-primary);
+  border-radius: 12px;
+  padding: 11px 18px;
+  font: var(--link);
+  color: var(--content-secondary);
+  outline: none;
+  max-width: 451px;
+  width: 100%;
+
+}
+
+.input-text::placeholder {
+  color: var(--content-tertiary);
+}
+
+input:focus {
+  border-color: var(--color-brand);
+}
+
+.button-add {
+  background-color: var(--color-brand);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font: var(--label);
+  color: var(--always-white);
+  max-width: 160px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  padding: 8px 12px;
+  background-color: var(--always-white);
+  border-radius: 12px;
+  align-items: center;
+  font: var(--paragraph);
+  color: var(--content-secondary);
+  margin-bottom: 12px;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--border-primary);
+  border-radius: 6px;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  background-image: url('/assets/check.svg');
+  background-size: 10px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trash-button {
+  background: none;
+  border: none;
+  color: var(--content-tertiary);
+  cursor: pointer;
+}
+
+.warning-container {
+  background-color: var(--color-danger);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font: var(--label);
+  margin-top: 36px;
+  display: none;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.red-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 695px) {
+  .field-add {
+    flex-direction: column;
+  }
+
+  .button-add,
+  .input-text {
+    max-width: none;
+  }
+}
